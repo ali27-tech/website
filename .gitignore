@@ -1,32 +1,146 @@
-# Prerequisites
-*.d
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+<html>
+<head>
+<meta charset="utf-8">
+<title>ITACHI Website</title>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="css/lightslider.css">
+<!--js-lin----------->
+<script src="js/JQuery3.3.1.js"></script>
+<script src="js/lightslider.js"></script>
+<!--fav-icon------->
+<link rel="shortcut icon" href="images/fav icon.png"/>
+<!--using Fontawesome------->
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+</head>
 
-# Precompiled Headers
-*.gch
-*.pch
+<body>
+    <!--navigation----------->
+    <nav> <!--logo-------->
+        <a href="#" class="logo">
+            <img src="images/logo.png">
+        </a>
+        <!--menu-------->
+        <ul class="menu">
+            <li><a href="#">Home  </a></li>  
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+            <li><a href="#">Movies  </a></li>  
 
-# Fortran module files
-*.mod
-*.smod
+            <li><a href="#">Hollywood  </a></li>  
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+            <li><a href="#">KURDi  </a></li>  
 
-# Executables
-*.exe
-*.out
-*.app
+            <li><a href="#">Anime  </a></li>  
+        </ul>
+<!--search-------->
+<div class="search">
+    <input type="text" placeholder="Find Your Favourite Movies"/>
+<!--search-icon-------->
+<i class="fas fa-search"></i>
+</div>
+    </nav>
+    <section id="main">
+        <!--showcase------------>
+        <!--heading------------->
+        <h1 class="showcase-heading">Showcase</h1>
+            <!--box-1---------------------->
+            <l1 class="item-a">
+        <!--showcase-box---------->
+        <div class="showcase-box">         
+        <img src="images/m-1.jpg"/>
+        </div>  
+            </l1>
+                        <!--box-2---------------------->
+                        <l1 class="item-b">
+                            <!--showcase-box---------->
+                            <div class="showcase-box">         
+                                <img src="images/m-2.jpg"/>
+                            </div>  
+                                </l1>
+                                            <!--box-3---------------------->
+            <l1 class="item-c">
+                <!--showcase-box---------->
+                <div class="showcase-box">         
+                    <img src="images/m-3.jpg"/>
+                </div>  
+                    </l1>
+                                <!--box-4---------------------->
+            <l1 class="item-d">
+                <!--showcase-box---------->
+                <div class="showcase-box">         
+                    <img src="images/m-4.jpg"/>
+                </div>  
+                    </l1>
+                                <!--box-5---------------------->
+            <l1 class="item-e">
+                <!--showcase-box---------->
+                <div class="showcase-box">         
+                    <img src="images/m-5.jpg"/>
+                </div>  
+                    </l1>
+            
+            </ul>
+         <!--latest-movies------------>
+            <section id="latest">
+            
+                <h2 class="latest-heading">Latest Movies</h2>
+                <!--slider------->
+                <ul id="autoWidth2" class="cS-hidden"></ul>
+                    <!--slide-box-1---------------------->
+                    <l1 class="item-a">
+                <div class="latest-box">  
+                    <!--img------>       
+                    <div class="latest-b-img">
+                    <img src="images/m-1.jpg"/>
+                </div>
+                <!--text----->
+                <div class="latest-b-text">
+                    <strong>Kin 2018</strong>
+                    <p>Action Movie</p>
+                </div>  
+                    </l1>
+                                        <!--slide-box-1---------------------->
+                                        <l1 class="item-a">
+                                            <div class="latest-box">  
+                                                <!--img------>       
+                                                <div class="latest-b-img">
+                                                <img src="images/m-2.jpg"/>
+                                            </div>
+                                            <!--text----->
+                                            <div class="latest-b-text">
+                                                <strong>Kin 2018</strong>
+                                                <p>Action Movie</p>
+                                            </div>  
+                                                </l1>
+                                                                    <!--slide-box-1---------------------->
+                                                                    <l1 class="item-a">
+                                                                        <div class="latest-box">  
+                                                                            <!--img------>       
+                                                                            <div class="latest-b-img">
+                                                                            <img src="images/m-3.jpg"/>
+                                                                        </div>
+                                                                        <!--text----->
+                                                                        <div class="latest-b-text">
+                                                                            <strong>Kin 2018</strong>
+                                                                            <p>Action Movie</p>
+                                                                        </div>  
+                                                                            </l1>
+
+    
+    <!--slider-scrippt----------->
+    <script>
+<
+$(document).ready(function() {
+    $('#autoWidth,#autoWidth2').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth,#autoWidth2').removeClass('cS-hidden');
+        } 
+    });  
+  });
+    </script>
+
+
+</body>
+</html>
